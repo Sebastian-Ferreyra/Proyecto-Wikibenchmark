@@ -1,0 +1,50 @@
+<?php
+
+namespace Tablas\Tabla;
+
+/**
+* @Entity
+*
+**/
+
+class Componente {
+
+    /**
+    * @var int
+    *   /**
+    * @Id
+    * @Column(type="integer")
+   * @GeneratedValue
+    * */
+    private $id;
+
+    /**
+    * @var string
+    * @Column(length=150)
+    */
+    private $nombre;
+
+    /**
+    * @var string
+    * @Column(type="text")
+    */
+    private $detalle;
+
+    /**
+    * @var string
+    * @Column(length=150)
+    */
+    private $Tipo;
+
+
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->Benchmark = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    
+}

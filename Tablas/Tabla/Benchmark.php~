@@ -1,0 +1,74 @@
+<?php
+
+namespace Tablas\Tabla;    
+
+
+/**
+* @Entity
+*
+**/
+
+class Benchmark {
+
+    /**
+    * @var int
+    *   
+    * @Id
+    * @Column(type="integer")
+    * @GeneratedValue
+    * */
+    private $id;
+
+    /**
+    * @ManyToOne (targetEntity="Componente")
+    * @JoinColumn (name="id_componente",referencedColumnName="id")
+    */
+    private $id_componente;
+
+    /**
+    * @ManyToOne (targetEntity="Juego")
+    * @JoinColumn (name="id_juego",referencedColumnName="id")
+    */
+    private $id_juego;
+
+
+    /**
+    * @ManyToOne (targetEntity="Usuario")
+    * @JoinColumn (name="id_usuario",referencedColumnName="id")
+    */
+    private $id_usuario;
+
+    /**
+    * @ManyToOne (targetEntity="Resolucion")
+    * @JoinColumn (name="id_resolucion",referencedColumnName="id")
+    */
+    private $id_resolucion;
+
+    /**
+    * @ManyToOne (targetEntity="Calidad")
+    * @JoinColumn (name="id_calidad",referencedColumnName="id")
+    */
+    private $id_calidad;
+
+     /**
+    * @var int
+    * @Column(type="integer")
+    */
+    private $fps_med;
+
+    /**
+    * @var int
+    * @Column(type="integer")
+    */
+    private $fps_min;
+
+    /**
+    * @var int
+    * @Column(type="integer")
+    */
+    private $fps_max;
+
+
+    
+}
+

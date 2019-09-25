@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html>
+<head>	
+
+	<link href="./public/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<title>Register Wikibenchmarks</title>
+
+<style type="text/css">
+	
+	body {
+  margin: 0;
+  padding: 0;
+  background-color: #003333;
+  height: 100vh;
+}
+#login .container #login-row #login-column #login-box {
+
+  max-width: 600px;
+  height: 380px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  opacity: 0.9;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -40px;
+
+}
+
+.text-color {
+	color: #003333;
+  
+}
+
+.boton-ingresar {
+  background-color: #e7301c;
+  -webkit-border-radius: 7px;
+  border-radius: 6px;
+  color: #ffffff;
+  border: 0px solid #e7301c;
+  padding:3px;
+
+}
+
+.textoWikibenchmarks {
+ color: #e7301c;
+}
+
+.login-logo {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+</style>
+
+</head>
+<body>
+	<body>
+    <div id="login">
+        <!--<h3 class="text-center textoWikibenchmarks pt-5">WIKIBENCHMARKS</h3>-->
+<div align="left">
+        <!-- AÑADIRLE LA APARIENCIA DE BOTON CON CSS -->
+      <a href="/wikibenchmarks/home.php"> HOME </a>
+    </div>
+        <div class="container">
+                  
+            <div id="login-row" class="row justify-content-center   ">
+                <div id="login-column">
+                  <img src="public/WIKIBENCHMARK.png" alt="WIKIBENCHMARKS" height="100" width="500" align="middle" class="login-logo">
+                    <div id="login-box">
+                        <form id="login-form" class="form" action = "Register.php" method="post">
+                            <h3 class="text-center text-color">Registrarse</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-color">Nombre de Usuario:</label><br>
+                                <input type="text" name="Usuario" id="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="username" class="text-color">Email:</label><br>
+                                <input type="text" name="Email" id="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-color">Contrasena:</label><br>
+                                <input type="password" name="Clave" id="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="boton-ingresar" value="Registrarse">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a href="/wikibenchmarks/login.html" class="text-color ">Iniciar Sesion</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</body>
+</html>

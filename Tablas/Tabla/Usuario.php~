@@ -1,0 +1,49 @@
+<?php
+
+namespace Tablas\Tabla;
+
+/**
+* @Entity
+*
+**/
+
+class Usuario {
+
+    /**
+    * @var int
+    *   /**
+    * @Id
+    * @Column(type="integer")
+    * @GeneratedValue
+    * */
+    private $id;
+
+    /**
+    * @var string
+    * @Column(length=150)
+    */
+    private $nombre;
+
+    /**
+    * @var string
+    * @Column(length=150)
+    */
+    private $pass;
+
+    /**
+    * @var string
+    * @Column(length=150)
+    */
+    private $email;
+
+   
+    
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->Benchmark = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+}
